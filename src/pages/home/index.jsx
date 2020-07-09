@@ -1,7 +1,7 @@
 import React from 'react';
 // import './style.css';
 // import { Component } from 'react';
-import Product from './../../components/product'
+import Product from '../../components/product'
 
 const Home = () => {
     const products = [
