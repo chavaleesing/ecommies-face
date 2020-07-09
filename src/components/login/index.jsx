@@ -9,7 +9,7 @@ class Login extends Component {
   constructor(props) {
     super(props);
 
-    this.onSubmit = this.onSubmit.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
 
   onClick(e) {
