@@ -2,44 +2,21 @@ import React from 'react';
 import './style.css';
 import { Component } from 'react';
 import LoginForm from './form'
+import axios from 'axios';
 
 class Login extends Component {
 
   constructor(props) {
     super(props);
 
-    this.onChanageUsername = this.onChanageUsername.bind(this);
-    this.onChanagePassword = this.onChanagePassword.bind(this);
-
-    this.state = {
-      username: '',
-      password: ''
-    }
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onChanageUsername(e){
-    this.setState({
-      username: e.target.value
-    });
+  onClick(e) {
+    window.location = '/register';
   }
 
-  onChanagePassword(e){
-    this.setState({
-      password: e.target.value
-    });
-  }
-
-  onSubmit(e) {
-    e.preventDefault();
-    const userForm = {
-      username: this.state.username,
-      password: this.state.password
-    }
-    console.log(userForm);
-
-    window.location = '/';
-  }
-
+  
   render() {
     return (
       <div className="Login">
@@ -47,13 +24,8 @@ class Login extends Component {
           <h2>Login</h2>
           <LoginForm/>
           <br/>
-          <button>
-            Test 123s
-          </button>
+          <button onClick={this.onClick}>Register</button>
         </div>
-        <p>
-          To get started Login,  and save to reload.
-        </p>
       </div>
     );
   }

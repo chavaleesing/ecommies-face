@@ -3,7 +3,7 @@ import './style.css';
 import { Component } from 'react';
 import axios from 'axios';
 
-class LoginForm extends Component {
+class RegisterForm extends Component {
 
   constructor(props) {
         super(props);
@@ -14,6 +14,7 @@ class LoginForm extends Component {
 
     this.state = {
       username: '',
+      email: '',
       password: ''
     }
   }
@@ -21,6 +22,12 @@ class LoginForm extends Component {
   onChanageUsername(e){
     this.setState({
       username: e.target.value
+    });
+  }
+
+  onChanageEmail(e){
+    this.setState({
+      email: e.target.value
     });
   }
 
@@ -34,14 +41,16 @@ class LoginForm extends Component {
     e.preventDefault();
     const userForm = {
       username: this.state.username,
+      email: this.state.email,
       password: this.state.password
     }
+
     console.log(userForm);
 
-    axios.post('http://localhost:9000/users/login', userForm)
+    axios.post('http://localhost:9000/users/register', userForm)
         .then(res => console.log(res.data));
 
-    window.location = '/home';
+    window.location = '/login';
   }
 
   render() {
@@ -53,14 +62,18 @@ class LoginForm extends Component {
             </label>
             <br />
             <label>
+              Email:
+              <input type="text" name="name" value={this.state.value} onChange={this.onChanagePassword}/>
+            </label>
+            <label>
               Password:
               <input type="text" name="name" value={this.state.value} onChange={this.onChanagePassword}/>
             </label>
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Register" />
         </form>
     );
   }
 }
 
-export default LoginForm;
+export default RegisterForm;
