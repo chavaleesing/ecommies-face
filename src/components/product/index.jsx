@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 import { Component } from 'react';
 import axios from 'axios';
 
