@@ -52,24 +52,36 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <div className="Login">
-        <div className="Login-header">
+      <div className="container" style={{ paddingTop: '8rem' }}>
+        <div className="row">
           <h2>Login</h2>
-          <form onSubmit={this.onSubmit}>
-            <label>
-              Username:
-                <input type="text" name="name" value={this.state.value} onChange={this.onChanageUsername} />
-            </label>
-            <br />
-            <label>
-              Password:
-                <input type="text" name="name" value={this.state.value} onChange={this.onChanagePassword} />
-            </label>
-            <br />
-            <input type="submit" value="Submit" />
-          </form>
+        </div>
+        <br />
+        <div className="form-group">
+          <label>Username:</label>
+          <input type="email" className="form-control w-50" placeholder="Enter email" name="name" value={this.state.value} onChange={this.onChanageUsername} />
+        </div>
+        <div className="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control w-50" id="pwd" value={this.state.value} onChange={this.onChanagePassword} />
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <br />
+        <button onClick={this.onSubmit} className="btn btn-primary btn-sm btn-lg btn-block w-50">Login</button>
+        <br /><br />
+        <div className="row">
+          <span>
+            Don’t have an account?
+					</span>
+        </div>
+        <div className="row">
           <br />
-          <button onClick={this.onClick}>Register</button>
+          <a href="#" className="txt3" onClick={this.onClick}>
+            Sign up now
+					</a>
         </div>
       </div>
     );
