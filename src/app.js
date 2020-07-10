@@ -6,6 +6,7 @@ import Header from './components/header'
 import Home from './pages/home'
 import Login from './pages/login'
 import Register from './pages/register'
+import Detail from './pages/productDetail'
 
 
 const AppRoutes = () => {
@@ -20,6 +21,7 @@ const AppRoutes = () => {
           <Route path="/home" component={Home} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
+          <Route path="/productdetail" component={Detail} />
         </Switch>
       </React.Fragment>
     </BrowserRouter>
