@@ -52,7 +52,7 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <div className="container" style={{ paddingTop: '8rem' }}>
+      <div className="container" style={{ paddingTop: '10rem' }}>
         <div className="row">
           <h2>Login</h2>
         </div>

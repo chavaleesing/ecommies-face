@@ -12,12 +12,12 @@ class Product extends Component {
 
   render(props) {
     return (
-        <div className="card" style={{width: '18rem'}}>
-        <img className="card-img-top" src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-512.png" alt="Card image cap" />
+        <div className="card m-3" style={{width: '18rem'}}>
+        <img className="card-img-top" src="https://bizflyportal.mediacdn.vn/bizflyportal/345/470/2020/04/21/14/34/415874328738322.jpg" alt="Card image cap" />
         <div className="card-body">
-          <h5 className="card-title">{this.props.name}</h5>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" className="btn btn-primary">Detail</a>
+          <h6 className="card-title">{this.props.name}</h6>
+          <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#" className="btn btn-sm btn-primary">Detail</a>
         </div>
       </div>
     );
