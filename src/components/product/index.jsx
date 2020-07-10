@@ -11,7 +11,7 @@ class Product extends Component {
   }
 
   onClick(e) {
-    window.location = '/productdetail';
+    window.location = '/productdetail/' + e.target.name;
   }
 
   render(props) {
@@ -21,7 +21,7 @@ class Product extends Component {
         <div className="card-body">
           <h6 className="card-title">{this.props.name}</h6>
           <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a href="#" onClick={this.onClick} className="btn btn-sm btn-info">Detail</a>
+          <a href="#" onClick={this.onClick} name={this.props.name} className="btn btn-sm btn-info">Detail</a>
         </div>
       </div>
     );

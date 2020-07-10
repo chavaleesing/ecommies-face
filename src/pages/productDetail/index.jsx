@@ -5,7 +5,7 @@ import ProductDetail from '../../components/productDetail'
 const Detail = () => {
     return (
         <React.Fragment>
-            <ProductDetail/>
+            <ProductDetail />
         </React.Fragment>
     );
 };
