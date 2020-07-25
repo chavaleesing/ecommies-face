@@ -9,11 +9,9 @@ const Home = () => {
     ]
     return (
         <React.Fragment>
-            <div className="container" style={{paddingTop: '8rem'}} >
                 <div className="row">
                     { products.map(product => <Product name={product.name}/>) }
                 </div>
-            </div>
         </React.Fragment>
     );
 };
