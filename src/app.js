@@ -14,23 +14,17 @@ const AppRoutes = () => {
   return (
     <BrowserRouter>
       <React.Fragment>
-        <div className="row-sm">
+        <div>
           <Header />
         </div>
-        <div className="row">
-          <div className="col-2">
-            {/* <p>PPPP</p> */}
-            <Sidebar />
-          </div>
-          <div className="col-10">
-            <Switch>
-              <Route exact path={'/'} render={() => { return <Redirect to={'/home'} /> }} />
-              <Route path="/home" component={Home} />
-              <Route path="/login" component={Login} />
-              <Route path="/register" component={Register} />
-              <Route path="/productdetail" component={Detail} />
-            </Switch>
-          </div>
+        <div>
+          <Switch>
+            <Route exact path={'/'} render={() => { return <Redirect to={'/home'} /> }} />
+            <Route path="/home" component={Home} />
+            <Route path="/login" component={Login} />
+            <Route path="/register" component={Register} />
+            <Route path="/productdetail" component={Detail} />
+          </Switch>
         </div>
       </React.Fragment>
     </BrowserRouter>
