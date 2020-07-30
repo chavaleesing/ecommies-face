@@ -1,0 +1,19 @@
+.nav-link {
+    color: #cc6b10;
+    text-shadow: rgb(158, 107, 40);
+    font-weight: bold;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: #f19b4b;
+    background-color: rgba(255, 235, 205, 0.3);
+}
+
+.nav-hm {
+   border-bottom: 2px solid rgba(153, 89, 15, 0.3);
+   border-top: 8px solid rgba(228, 224, 219, 0.8);
+}
+
+.row-hm {
+    text-align: center;
+}
