@@ -1,0 +1,26 @@
+a {
+    color: #b3640a;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #e49835;
+    border-color: #eca547;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: #a76d23;
+    border-color: #a76d23;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    color: #915107;
+    font-weight: bold;
+}
+
+.navbar-hd {
+    background: url("../../assets/navbg.jpg") repeat;
+    background-size: cover;
+    opacity: 1;
+}
