@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 import { Component } from 'react';
 import axios from 'axios';
+import tempPic from '../../assets/navbg.jpg'
 
 class Product extends Component {
 
@@ -17,7 +18,7 @@ class Product extends Component {
   render(props) {
     return (
         <div className="card m-3" style={{width: '14rem'}}>
-        <img className="card-img-top" src="https://bizflyportal.mediacdn.vn/bizflyportal/345/470/2020/04/21/14/34/415874328738322.jpg" alt="Card image cap" />
+        <img className="card-img-top" src={tempPic} alt="Card image cap" />
         <div className="card-body">
           <h6 className="card-title">{this.props.name}</h6>
           <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
