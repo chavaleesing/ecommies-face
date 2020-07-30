@@ -14,7 +14,8 @@ class ProductDetail extends Component {
         return (
             <div className="container" style={{ paddingTop: '10rem' }}>
                 <div className="row">
-                    <h2>Product Detail............</h2>
+                    <h1>{this.props.product.name} </h1>
+                    <h5>{this.props.product.description}</h5>
                 </div>
             </div>
         );

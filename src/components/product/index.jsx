@@ -20,7 +20,8 @@ class Product extends Component {
         <div className="card m-3" style={{width: '14rem'}}>
         <img className="card-img-top" src={tempPic} alt="Card image cap" />
         <div className="card-body">
-          <h6 className="card-title">{this.props.name}</h6>
+          <h5 className="card-title">{this.props.product.name}</h5>
+          <h6> {this.props.product.price} Baht </h6>
           <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <a href="#" onClick={this.onClick} name={this.props.name} className="btn btn-sm btn-info">Detail</a>
         </div>

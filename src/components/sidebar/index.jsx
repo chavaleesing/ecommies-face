@@ -7,7 +7,7 @@ const Sidebar = () => {
     return (
         <nav class="nav nav-hm">
             <div className="container">
-                <div className="row row-hm justify-content-center">
+                <div className="row row-hm">
                     <a class="nav-link m-3" href="#">All</a>
                     <a class="nav-link m-3" href="#">Cookie</a>
                     <a class="nav-link m-3" href="#">Brownie</a>
