@@ -1,0 +1,21 @@
+.container-detail {
+    display: flex;
+    flex-direction: row;
+    padding: 4%;
+}
+
+// .container-detail :first-child {
+//    width: 100%;
+// }
+
+.img-gal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.card-img {
+    border: 1px solid grey;
+   // display: flex;
+}
