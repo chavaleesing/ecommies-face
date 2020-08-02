@@ -14,22 +14,17 @@ const AppRoutes = () => {
   return (
     <BrowserRouter>
       <React.Fragment>
-        <div>
-          <Header />
-        </div>
-        <div>
-          <Switch>
-            <Route exact path={'/'} render={() => { return <Redirect to={'/home'} /> }} />
-            <Route path="/home" component={Home} />
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-            <Route path="/productdetail" component={Detail} />
-          </Switch>
-        </div>
+        <Header />
+        <Switch>
+          <Route exact path={'/'} render={() => { return <Redirect to={'/home'} /> }} />
+          <Route path="/home" component={Home} />
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
+          <Route path="/productdetail" component={Detail} />
+        </Switch>
       </React.Fragment>
     </BrowserRouter>
   )
 }
-
 
 export default AppRoutes
