@@ -12,10 +12,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 25%;
+    margin-top: 5%;
+    // width: 25%;
+    img {
+        width: 20%;
+        border: 1px solid grey;
+   }
 }
 
 .card-img {
     border: 1px solid grey;
    // display: flex;
+
 }
