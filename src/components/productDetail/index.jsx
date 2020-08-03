@@ -4,6 +4,7 @@ import { Component } from 'react';
 import axios from 'axios';
 import tempPic from '../../assets/navbg.jpg'
 import RatingSummary from '../ratingSummary'
+import Comment from '../comment'
 
 class ProductDetail extends Component {
 
@@ -27,16 +28,19 @@ class ProductDetail extends Component {
                     </div>
                     <div className="container">
                         <h1>{this.props.product.name} </h1>
-                        <h5>{this.props.product.description}</h5>
+                        <p>{this.props.product.description}</p>
                     </div>
                 </div>
                 <div className="container container-detail">
                     <div className="container">
-                        <h1>User feedback</h1>
+                        <h2>User feedback</h2>
                     </div>
                     <div className="container">
                         <RatingSummary/>
                     </div>
+                </div>
+                <div className="container container-detail">
+                    <Comment/>
                 </div>
             </React.Fragment>
         );
