@@ -3,22 +3,47 @@
     flex-direction: row;
     .progress-star {
         width: 200px;
-        height: 0.6rem;
+        height: 0.5rem;
         vertical-align: middle;
         margin-top: 1.5%;
         margin-left: 2%;
     }
 }
 
+.container-star-avg {
+    display: flex;
+    flex-direction: row;
+    p {
+        font-size: 20px;
+        margin-left: 12px;
+        margin-bottom: 1px;
+    }
+    .MuiBox-root-1 {
+        margin-bottom: 1px;
+        border-color: transparent;
+    }
+    .MuiRating-root {
+        font-size: 42px;
+        color: #f5a207;
+    }
+}
+
 .container-star .MuiBox-root {
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     .MuiRating-root {
         font-size: 1rem;
     }
 }
 
 .progress-star-count {
-    color: grey;
+    color: rgb(41, 41, 41);
     font-size: 11px;
     margin-left: 2px;
+}
+
+.text-sum-rate {
+    color: grey;
+    font-size: 11px;
+    margin-left: 12px;
+    margin-bottom: 1px;
 }

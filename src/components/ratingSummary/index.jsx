@@ -15,6 +15,7 @@ class RatingSummary extends Component {
     }
 
     render(props) {
+        const avgStar = 4.22 
         let ss = []
         for (let i=5; i>0; i--) {
             ss.push(
@@ -27,6 +28,14 @@ class RatingSummary extends Component {
         }
         return (
             <div className="container">
+                <div className="container-star-avg">
+                    <Ratings rate={4.5} />
+                    <div>
+                        <p className="progress-star-count">{avgStar} / 5</p>
+                        <h1 className="text-sum-rate">All rating (134)</h1>
+                    </div>
+                </div>
+                <hr/>
                 {ss}
             </div>
         );
