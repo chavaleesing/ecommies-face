@@ -1,13 +1,10 @@
 .comment-header {
     display: flex;
     flex-direction: row;
-    p {
-        // margin-bottom: 1px;
-    }
 }
 
 .comment-date-created {
-    margin-left: 500px;
+    margin-left: 70%;
     color: #000;
     font-size: 12px;
     font-weight: bold;
@@ -16,7 +13,27 @@
 .comment-username {
     margin-left: 5px;
     margin-top: 5px;
-    color: rgb(82, 82, 82);
+    color: rgb(124, 124, 124);
     font-size: 16px;
-    //font-weight: bold;
+    font-weight: bold;
+}
+
+.comment-body {
+    margin-left: 40px;
+    font-size: 14px;
+    color: rgb(98, 98, 98);
+    display: flex;
+    flex-direction: row;
+    .MuiRating-root {
+        font-size: 1.2rem;
+    }
+    
+    .MuiBox-root-7 {
+        margin-left: 500px;
+    }
+}
+
+.comment-template {
+   //background-color: rgba(221, 221, 221, 0.2);
+    border-bottom: 2px solid #ececec;
 }

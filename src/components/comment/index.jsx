@@ -1,7 +1,8 @@
 import React from 'react';
 import { Component } from 'react';
 import './style.scss';
-import AccountBoxTwoToneIcon from '@material-ui/icons/AccountBoxTwoTone';
+import AccountCircleSharpIcon from '@material-ui/icons/AccountCircleSharp';
+import Ratings from '../rating' 
 
 class Comment extends Component {
 
@@ -12,17 +13,15 @@ class Comment extends Component {
 
     render(props) {
         return (
-            <div className="container">
+            <div className="comment-template">
                 <div className="comment-header">
-                    <AccountBoxTwoToneIcon color="primary" fontSize="large" />
+                    <AccountCircleSharpIcon fontSize="large" />
                     <p className="comment-username"> User2910</p>
                     <p className="comment-date-created"> 11 Jan 2020</p>
                 </div>
                 <div className="comment-body">
-                    123
-                </div>
-                <div className="comment-footer">
-                    123
+                    <p>This is the best cookie I ever had, most valuable</p>
+                    <Ratings rate={5}/>
                 </div>
             </div>
         );
