@@ -1,39 +1,47 @@
-.comment-header {
-    display: flex;
-    flex-direction: row;
+.comment-username {
+    margin-left: 5px;
+    color: #ad9e5c;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .comment-date-created {
     margin-left: 70%;
     color: #000;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
 }
 
-.comment-username {
-    margin-left: 5px;
-    margin-top: 5px;
-    color: rgb(124, 124, 124);
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.comment-body {
-    margin-left: 40px;
-    font-size: 14px;
-    color: rgb(98, 98, 98);
+.comment-header {
     display: flex;
     flex-direction: row;
-    .MuiRating-root {
-        font-size: 1.2rem;
+    width: 100%;
+    fieldset {
+        margin-bottom: 5px;
     }
-    
-    .MuiBox-root-7 {
-        margin-left: 500px;
+    p {
+        margin-bottom: 5px;
     }
 }
 
 .comment-template {
-   //background-color: rgba(221, 221, 221, 0.2);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     border-bottom: 2px solid #ececec;
+    .MuiRating-root {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+}
+
+.comment-body {
+    display: flex;
+    width: 100%;
+    p {
+        font-size: 13px;
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
 }

@@ -15,13 +15,13 @@ class Comment extends Component {
         return (
             <div className="comment-template">
                 <div className="comment-header">
-                    <AccountCircleSharpIcon fontSize="large" />
+                    <AccountCircleSharpIcon />
                     <p className="comment-username"> User2910</p>
-                    <p className="comment-date-created"> 11 Jan 2020</p>
+                    <Ratings rate={5}/>
+                    <p className="comment-date-created"> 11/01/2020</p>
                 </div>
                 <div className="comment-body">
                     <p>This is the best cookie I ever had, most valuable</p>
-                    <Ratings rate={5}/>
                 </div>
             </div>
         );
