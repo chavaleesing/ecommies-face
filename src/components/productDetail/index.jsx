@@ -40,7 +40,10 @@ class ProductDetail extends Component {
                     </div>
                 </div>
                 <div className="container container-detail">
-                    <Comment/>
+                    <div className="container">
+                    <Comment/><Comment/><Comment/><Comment/>
+                    </div>
+                    
                 </div>
             </React.Fragment>
         );

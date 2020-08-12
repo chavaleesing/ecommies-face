@@ -14,7 +14,6 @@ class Ratings extends Component {
 
   render(props) {
     return (
-        <div>
           <Box component="fieldset" mb={3} borderColor="transparent">
             <Rating
               name="simple-controlled"
@@ -22,7 +21,6 @@ class Ratings extends Component {
               precision={0.5} readOnly
             />
           </Box>
-        </div>
       );
   }
 }
