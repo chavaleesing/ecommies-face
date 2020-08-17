@@ -3,11 +3,11 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom'
 
 import Header from './components/header'
-import Sidebar from './components/sidebar'
 import Home from './pages/home'
 import Login from './pages/login'
 import Register from './pages/register'
 import Detail from './pages/productDetail'
+import MyShop from './pages/myShop'
 
 
 const AppRoutes = () => {
@@ -21,6 +21,7 @@ const AppRoutes = () => {
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/productdetail" component={Detail} />
+          <Route path="/myshop" component={MyShop} />
         </Switch>
       </React.Fragment>
     </BrowserRouter>
