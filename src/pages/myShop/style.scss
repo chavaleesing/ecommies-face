@@ -2,10 +2,18 @@
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    justify-content: center;
-    position:relative;
+    h3 {
+        width: 56%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .btn-info {
+        margin-left: 25%;
+        border-radius: 25px;
+        box-shadow: 1.5px 2px 1.5px 2px  #e0e0e0;
+        border-color: #398eb6;
+    }
+
 }
 
-.add-btn {
-    justify-content: flex-end;
-}
