@@ -8,6 +8,7 @@ import Login from './pages/login'
 import Register from './pages/register'
 import Detail from './pages/productDetail'
 import MyShop from './pages/myShop'
+import newItem from './pages/newItem'
 
 
 const AppRoutes = () => {
@@ -22,6 +23,7 @@ const AppRoutes = () => {
           <Route path="/register" component={Register} />
           <Route path="/productdetail" component={Detail} />
           <Route path="/myshop" component={MyShop} />
+          <Route path="/newitem" component={newItem} />
         </Switch>
       </React.Fragment>
     </BrowserRouter>
